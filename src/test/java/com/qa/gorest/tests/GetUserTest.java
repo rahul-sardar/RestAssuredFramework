@@ -26,7 +26,7 @@ public class GetUserTest extends BaseTest {
 						
 	}
 	
-	///public/v2/users/4165714/?name&staus
+	///public/v2/users/4165714/?name&status
 	@Test(enabled = false)
 	public void getUserTest() {
 		restClient.get(GOREST_ENDPOINT+"/"+4438975, true, true)
