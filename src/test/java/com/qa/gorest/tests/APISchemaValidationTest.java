@@ -27,7 +27,7 @@ public class APISchemaValidationTest extends BaseTest{
 		 restClient.post(GOREST_ENDPOINT, "json", user, true, true)
 					.then().log().all()
 						.assertThat().statusCode(APIHttpStatus.CREATED_201.getCode())
-							.body(matchesJsonSchemaInClasspath("createuserschema.json"));
+							.body(matchesJsonSchemaInClasspath("createusersschema.json"));
 	}
 
 

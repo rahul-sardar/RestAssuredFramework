@@ -160,7 +160,7 @@ public class RestClient {
 									.get(serviceUrl);
 		}
 		return RestAssured.given(createRequestSpec(headersMap, queryParams, includeAuth))
-				.when()
+				.when() 
 					.get(serviceUrl);
 		
 	}
