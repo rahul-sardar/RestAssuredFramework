@@ -81,7 +81,7 @@ pipeline
         stage('Sanity Automation Test') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/naveenanimation20/June2023RestAssuredFramework.git'
+                    git 'https://github.com/rahul-sardar/RestAssuredFramework.git'
                     sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/Runner/testng_sanity.xml"
                     
                 }
