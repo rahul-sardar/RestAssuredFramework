@@ -21,7 +21,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentReportListener implements ITestListener{
 	
-	private static final String OUTPUT_FOLDER = "./target/";
+	private static final String OUTPUT_FOLDER = "./reports/";
 	private static final String FILE_NAME = "APIExecutionReport.html";
 
 	private static ExtentReports extent = init();
